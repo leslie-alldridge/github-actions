@@ -8,8 +8,8 @@ jobs:
   assume_role:
     runs-on: ubuntu-latest
     steps:
-      - name: Assume Role
-        uses: youyo/awscredswrap@master
+      - name: AWS Assume role GitHub Actions
+        uses: youyo/awscredswrap@v0.2.1
         with:
           role_arn: ${{ secrets.ROLE_ARN }}
           duration_seconds: 3600
